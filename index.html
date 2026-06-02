@@ -13,7 +13,7 @@
   .brand-sub { font-size: 0.75rem; color: #666; letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; }
 
   .tabs { display: flex; justify-content: center; gap: 8px; margin: 22px 0 20px; flex-wrap: wrap; }
-  .tab-btn { padding: 9px 20px; border-radius: 30px; border: 1.5px solid #333; background: #111; color: #aaa; cursor: pointer; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.5px; transition: all 0.22s; }
+  .tab-btn { padding: 9px 18px; border-radius: 30px; border: 1.5px solid #333; background: #111; color: #aaa; cursor: pointer; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; transition: all 0.22s; }
   .tab-btn:hover { border-color: #c8a84b; color: #f0d060; }
   .tab-btn.active { background: linear-gradient(135deg, #2a5c2a, #c8a84b); border-color: transparent; color: #fff; box-shadow: 0 0 16px rgba(200,168,75,0.3); }
 
@@ -44,40 +44,32 @@
   .result-card.highlight .result-value { color: #7dff7d; }
   .info-note { font-size: 0.7rem; color: #444; text-align: center; margin-top: 14px; line-height: 1.6; }
 
-  /* SHIPPING */
+  /* SHIPPING TABLE */
   .ship-controls { display: flex; gap: 10px; align-items: flex-end; margin-bottom: 18px; flex-wrap: wrap; }
   .ship-controls .input-group { margin-bottom: 0; }
-
   .tbl-wrap { overflow-x: auto; margin-bottom: 6px; }
   table { width: 100%; border-collapse: collapse; font-size: 0.8rem; min-width: 920px; }
   thead tr { background: #1a1a1a; }
   th { padding: 10px 6px; text-align: center; color: #c8a84b; font-size: 0.65rem; letter-spacing: 1px; text-transform: uppercase; border-bottom: 1px solid #2a2a2a; white-space: nowrap; }
   th.left { text-align: left; }
-  th.grp-top { border-bottom: none; padding-bottom: 3px; color: #888; font-size: 0.6rem; }
   td { padding: 6px 4px; text-align: center; border-bottom: 1px solid #1c1c1c; vertical-align: middle; }
   td input[type="number"] { padding: 7px 6px; font-size: 0.8rem; border-radius: 7px; text-align: center; }
   td input[type="text"] { background: #1a1a1a; border: 1.5px solid #2a2a2a; border-radius: 7px; color: #fff; padding: 7px 8px; font-size: 0.8rem; outline: none; width: 100%; transition: border-color 0.2s; }
   td input[type="text"]:focus { border-color: #c8a84b; }
   tbody tr:hover { background: #141414; }
   tbody tr:last-child td { border-bottom: none; }
-
   .td-val { color: #f0d060; font-weight: 600; font-size: 0.83rem; }
   .td-charge { color: #7dff7d; font-weight: 700; font-size: 0.86rem; }
   .td-badge { display: inline-block; font-size: 0.6rem; padding: 2px 6px; border-radius: 10px; font-weight: 700; letter-spacing: 0.5px; }
   .badge-vol { background: #1a2a1a; color: #4caf50; border: 1px solid #4caf5044; }
   .badge-act { background: #2a1a0a; color: #c8a84b; border: 1px solid #c8a84b44; }
-
-  /* weight pair inputs */
   .wt-pair { display: flex; flex-direction: column; gap: 3px; }
   .wt-pair input { width: 72px !important; flex: none; }
   .wt-lbl { font-size: 0.58rem; color: #555; letter-spacing: 0.8px; text-align: center; }
-
   .del-btn { background: none; border: 1px solid #3a1a1a; border-radius: 6px; color: #c04040; cursor: pointer; padding: 5px 9px; font-size: 0.8rem; transition: all 0.2s; }
   .del-btn:hover { background: #3a1a1a; color: #ff6666; }
-
   .add-btn { background: linear-gradient(135deg, #1a3a1a, #2a2a0a); border: 1px solid #4caf5055; border-radius: 10px; color: #7dff7d; cursor: pointer; padding: 9px 20px; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.5px; transition: all 0.22s; display: flex; align-items: center; gap: 6px; }
   .add-btn:hover { border-color: #4caf50; box-shadow: 0 0 12px rgba(76,175,80,0.2); }
-
   .totals-bar { background: linear-gradient(135deg, #141f14, #1f1a0a); border: 1px solid #2a2a1a; border-radius: 14px; padding: 18px 24px; margin-top: 16px; }
   .totals-bar h3 { font-size: 0.72rem; color: #888; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; }
   .totals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
@@ -86,8 +78,12 @@
   .total-value { font-size: 1.2rem; font-weight: 700; color: #f0d060; }
   .total-unit { font-size: 0.67rem; color: #4caf50; margin-top: 1px; }
   .total-item.big .total-value { font-size: 1.45rem; color: #7dff7d; }
-
   .chargeable-banner { text-align: center; margin-top: 14px; padding: 10px; background: #0d1a0d; border: 1px solid #4caf5033; border-radius: 10px; font-size: 0.85rem; font-weight: 700; color: #7dff7d; letter-spacing: 0.5px; }
+
+  /* INSURANCE */
+  .breakdown-row { display: flex; justify-content: space-between; border-bottom: 1px solid #1e1e1e; padding: 6px 0; font-size: 0.82rem; line-height: 1.6; }
+  .breakdown-row:last-child { border-bottom: none; padding-top: 8px; }
+
   .footer { text-align: center; margin-top: 28px; color: #2a2a2a; font-size: 0.7rem; letter-spacing: 1px; }
 </style>
 </head>
@@ -105,6 +101,7 @@
   <button class="tab-btn active" onclick="switchTab('length',this)">📏 Length</button>
   <button class="tab-btn" onclick="switchTab('weight',this)">⚖️ Weight</button>
   <button class="tab-btn" onclick="switchTab('shipping',this)">📦 Volume / Chargeable Wt</button>
+  <button class="tab-btn" onclick="switchTab('insurance',this)">🛡️ Cargo Insurance</button>
 </div>
 
 <div class="card">
@@ -112,7 +109,7 @@
   <!-- LENGTH -->
   <div class="section active" id="tab-length">
     <div class="section-title">📏 Length Converter</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;flex-wrap:wrap;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
       <div>
         <div style="font-size:0.68rem;color:#c8a84b;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Metric</div>
         <div class="input-group"><label>Centimeters</label><div class="input-row"><input type="number" id="cms" placeholder="0.00" oninput="convertLength('cm')"/><span class="unit-badge">cm</span></div></div>
@@ -125,7 +122,7 @@
         <div class="input-group"><label>Feet</label><div class="input-row"><input type="number" id="feet" placeholder="0.00" oninput="convertLength('ft')"/><span class="unit-badge">ft</span></div></div>
       </div>
     </div>
-    <div class="info-note" style="margin-top:10px;">Type in any field — all others update instantly ⟷</div>
+    <div class="info-note">Type in any field — all others update instantly ⟷</div>
   </div>
 
   <!-- WEIGHT -->
@@ -145,7 +142,6 @@
   <!-- SHIPPING -->
   <div class="section" id="tab-shipping">
     <div class="section-title">📦 Multi-Package Shipping Calculator</div>
-
     <div class="ship-controls">
       <div class="input-group" style="min-width:180px">
         <label>Dimension Unit</label>
@@ -158,7 +154,6 @@
       </div>
       <button class="add-btn" onclick="addRow()">＋ Add Package</button>
     </div>
-
     <div class="tbl-wrap">
       <table id="pkgTable">
         <thead>
@@ -168,7 +163,7 @@
             <th rowspan="2">L</th>
             <th rowspan="2">W</th>
             <th rowspan="2">H</th>
-            <th colspan="2" style="border-bottom:1px solid #333; color:#c8a84b;">Weight / pkg</th>
+            <th colspan="2" style="border-bottom:1px solid #333;color:#c8a84b;">Weight / pkg</th>
             <th rowspan="2">Total Wt<br><span style="color:#555;font-size:0.6rem">(kg)</span></th>
             <th rowspan="2">CBM<br><span style="color:#555;font-size:0.6rem">per pkg</span></th>
             <th rowspan="2">Total CBM</th>
@@ -185,7 +180,6 @@
         <tbody id="pkgBody"></tbody>
       </table>
     </div>
-
     <div class="totals-bar">
       <h3>✈ Shipment Totals</h3>
       <div class="totals-grid">
@@ -199,7 +193,68 @@
       </div>
       <div class="chargeable-banner" id="charge-banner">Add packages to calculate chargeable weight</div>
     </div>
-    <div class="info-note">Volumetric weight divisor: 6,000 cm³/kg (IATA air freight standard) · Chargeable = higher of actual vs volumetric</div>
+    <div class="info-note">Volumetric weight divisor: 6,000 cm³/kg (IATA standard) · Chargeable = higher of actual vs volumetric</div>
+  </div>
+
+  <!-- INSURANCE -->
+  <div class="section" id="tab-insurance">
+    <div class="section-title">🛡️ Cargo Insurance Calculator</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div class="input-group">
+        <label>Cargo Value</label>
+        <div class="input-row"><input type="number" id="ins-cargo" placeholder="0.00" oninput="calcInsurance()"/><span class="unit-badge">$</span></div>
+      </div>
+      <div class="input-group">
+        <label>Transportation Charges</label>
+        <div class="input-row"><input type="number" id="ins-transport" placeholder="0.00" oninput="calcInsurance()"/><span class="unit-badge">$</span></div>
+      </div>
+      <div class="input-group">
+        <label>Duties / Taxes</label>
+        <div class="input-row"><input type="number" id="ins-duties" placeholder="0.00" oninput="calcInsurance()"/><span class="unit-badge">$</span></div>
+      </div>
+      <div class="input-group">
+        <label>Insurance Rate</label>
+        <div class="input-row"><input type="number" id="ins-rate" placeholder="e.g. 0.3" step="0.001" oninput="calcInsurance()"/><span class="unit-badge">%</span></div>
+      </div>
+    </div>
+
+    <div style="background:#161616;border:1px solid #2a2a2a;border-radius:12px;padding:14px 18px;margin:18px 0 0;font-size:0.76rem;color:#666;line-height:2;">
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;">
+        <span style="color:#aaa;">Insured Value</span><span style="color:#444;">=</span>
+        <span style="color:#f0d060;">(Cargo + Transport + Duties)</span>
+        <span style="color:#444;">×</span><span style="color:#4caf50;">110%</span>
+      </div>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:2px;">
+        <span style="color:#aaa;">Insurance Cost</span><span style="color:#444;">=</span>
+        <span style="color:#f0d060;">Insured Value</span><span style="color:#444;">×</span><span style="color:#4caf50;">Rate ÷ 100</span>
+      </div>
+    </div>
+
+    <div style="margin-top:18px;">
+      <div style="font-size:0.68rem;color:#c8a84b;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;">Breakdown</div>
+      <div style="background:#141414;border:1px solid #222;border-radius:12px;padding:14px 20px;">
+        <div class="breakdown-row"><span style="color:#888;">Cargo Value</span><span id="ins-d-cargo" style="color:#f0d060;">—</span></div>
+        <div class="breakdown-row"><span style="color:#888;">+ Transportation Charges</span><span id="ins-d-transport" style="color:#f0d060;">—</span></div>
+        <div class="breakdown-row"><span style="color:#888;">+ Duties / Taxes</span><span id="ins-d-duties" style="color:#f0d060;">—</span></div>
+        <div class="breakdown-row"><span style="color:#888;">Subtotal</span><span id="ins-d-subtotal" style="color:#aaa;">—</span></div>
+        <div class="breakdown-row"><span style="color:#888;">+ 10% Loss Markup</span><span id="ins-d-loading" style="color:#4caf50;">—</span></div>
+        <div class="breakdown-row"><span style="color:#c8a84b;font-weight:700;">= Insured Value</span><span id="ins-d-insured" style="color:#f0d060;font-weight:700;font-size:0.95rem;">—</span></div>
+      </div>
+    </div>
+
+    <div class="results-grid" style="margin-top:16px;">
+      <div class="result-card highlight">
+        <div class="result-label">Insured Value</div>
+        <div class="result-value" id="ins-res-insured">—</div>
+        <div class="result-unit">USD</div>
+      </div>
+      <div class="result-card" style="border-color:#c8a84b;background:linear-gradient(145deg,#1a140a,#221a08);">
+        <div class="result-label">Insurance Cost</div>
+        <div class="result-value" id="ins-res-cost" style="color:#f0d060;">—</div>
+        <div class="result-unit" id="ins-res-rate-lbl">enter rate above</div>
+      </div>
+    </div>
+    <div class="info-note">The 10% loading is standard practice to cover incidental charges per insurance convention.</div>
   </div>
 
 </div>
@@ -219,61 +274,65 @@
   </svg>`;
 
   let rowId = 0;
-  const fmt = (n, d=3) => (isNaN(n)||n===null) ? '—' : parseFloat(n.toFixed(d)).toLocaleString('en-US',{maximumFractionDigits:d});
+
+  const fmt = (n, d=3) => (isNaN(n) || n === null) ? '—' : parseFloat(n.toFixed(d)).toLocaleString('en-US', {maximumFractionDigits: d});
 
   function toCm(v, unit) {
     if (unit==='cm') return v;
-    if (unit==='mm') return v/10;
-    if (unit==='m')  return v*100;
-    if (unit==='in') return v*2.54;
+    if (unit==='mm') return v / 10;
+    if (unit==='m')  return v * 100;
+    if (unit==='in') return v * 2.54;
     return v;
   }
 
+  // TABS
   function switchTab(tab, btn) {
-    document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
-    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-    document.getElementById('tab-'+tab).classList.add('active');
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + tab).classList.add('active');
     btn.classList.add('active');
   }
 
+  // LENGTH
   function convertLength(from) {
     const fieldIds = {m:'meters', cm:'cms', mm:'mms', in:'inches', ft:'feet'};
     const val = parseFloat(document.getElementById(fieldIds[from]).value);
     if (isNaN(val) || document.getElementById(fieldIds[from]).value === '') {
-      Object.entries(fieldIds).forEach(([k,id])=>{ if(k!==from) document.getElementById(id).value=''; });
+      Object.entries(fieldIds).forEach(([k, id]) => { if (k !== from) document.getElementById(id).value = ''; });
       return;
     }
-    // convert everything to meters first
     let m;
     if      (from==='m')  m = val;
     else if (from==='cm') m = val / 100;
     else if (from==='mm') m = val / 1000;
     else if (from==='in') m = val * 0.0254;
     else if (from==='ft') m = val * 0.3048;
-
-    if(from!=='m')  document.getElementById('meters').value = +m.toFixed(6);
-    if(from!=='cm') document.getElementById('cms').value    = +(m*100).toFixed(4);
-    if(from!=='mm') document.getElementById('mms').value    = +(m*1000).toFixed(3);
-    if(from!=='in') document.getElementById('inches').value = +(m*39.3701).toFixed(4);
-    if(from!=='ft') document.getElementById('feet').value   = +(m*3.28084).toFixed(4);
+    if (from!=='m')  document.getElementById('meters').value = +m.toFixed(6);
+    if (from!=='cm') document.getElementById('cms').value    = +(m * 100).toFixed(4);
+    if (from!=='mm') document.getElementById('mms').value    = +(m * 1000).toFixed(3);
+    if (from!=='in') document.getElementById('inches').value = +(m * 39.3701).toFixed(4);
+    if (from!=='ft') document.getElementById('feet').value   = +(m * 3.28084).toFixed(4);
   }
 
+  // WEIGHT
   function convertWeight(from) {
-    let val = parseFloat(document.getElementById(from==='kg'?'kg':'lbs').value);
+    let val = parseFloat(document.getElementById(from==='kg' ? 'kg' : 'lbs').value);
     if (isNaN(val)) {
-      document.getElementById('kg').value=''; document.getElementById('lbs').value='';
-      ['res-grams','res-oz','res-mt','res-st'].forEach(id=>document.getElementById(id).textContent='—'); return;
+      document.getElementById('kg').value = '';
+      document.getElementById('lbs').value = '';
+      ['res-grams','res-oz','res-mt','res-st'].forEach(id => document.getElementById(id).textContent = '—');
+      return;
     }
-    let kg = from==='kg'?val:val*0.453592;
-    if(from==='kg') document.getElementById('lbs').value=+(kg*2.20462).toFixed(4);
-    else document.getElementById('kg').value=+kg.toFixed(4);
-    document.getElementById('res-grams').textContent=fmt(kg*1000,1);
-    document.getElementById('res-oz').textContent=fmt(kg*35.274,3);
-    document.getElementById('res-mt').textContent=fmt(kg/1000,5);
-    document.getElementById('res-st').textContent=fmt(kg/907.185,5);
+    let kg = from==='kg' ? val : val * 0.453592;
+    if (from==='kg') document.getElementById('lbs').value = +(kg * 2.20462).toFixed(4);
+    else             document.getElementById('kg').value  = +kg.toFixed(4);
+    document.getElementById('res-grams').textContent = fmt(kg * 1000, 1);
+    document.getElementById('res-oz').textContent    = fmt(kg * 35.274, 3);
+    document.getElementById('res-mt').textContent    = fmt(kg / 1000, 5);
+    document.getElementById('res-st').textContent    = fmt(kg / 907.185, 5);
   }
 
-  // ── SHIPPING ──
+  // SHIPPING ROWS
   function addRow() {
     const id = ++rowId;
     const tr = document.createElement('tr');
@@ -284,18 +343,8 @@
       <td><input type="number" class="r-l" placeholder="0" oninput="calcRow(${id})" style="width:64px"/></td>
       <td><input type="number" class="r-w" placeholder="0" oninput="calcRow(${id})" style="width:64px"/></td>
       <td><input type="number" class="r-h" placeholder="0" oninput="calcRow(${id})" style="width:64px"/></td>
-      <td>
-        <div class="wt-pair">
-          <div class="wt-lbl">kg</div>
-          <input type="number" class="r-wt-kg" placeholder="0.00" oninput="syncWt(${id},'kg')" style="width:70px"/>
-        </div>
-      </td>
-      <td>
-        <div class="wt-pair">
-          <div class="wt-lbl">lbs</div>
-          <input type="number" class="r-wt-lbs" placeholder="0.00" oninput="syncWt(${id},'lbs')" style="width:70px"/>
-        </div>
-      </td>
+      <td><div class="wt-pair"><div class="wt-lbl">kg</div><input type="number" class="r-wt-kg" placeholder="0.00" oninput="syncWt(${id},'kg')" style="width:70px"/></div></td>
+      <td><div class="wt-pair"><div class="wt-lbl">lbs</div><input type="number" class="r-wt-lbs" placeholder="0.00" oninput="syncWt(${id},'lbs')" style="width:70px"/></div></td>
       <td class="td-val r-total-wt">—</td>
       <td class="td-val r-cbm-pkg">—</td>
       <td class="td-val r-cbm-tot">—</td>
@@ -308,19 +357,19 @@
   }
 
   function delRow(id) {
-    const row = document.getElementById('row-'+id);
+    const row = document.getElementById('row-' + id);
     if (row) row.remove();
     recalcTotals();
   }
 
   function syncWt(id, from) {
-    const row = document.getElementById('row-'+id);
+    const row = document.getElementById('row-' + id);
     if (!row) return;
     const kgEl  = row.querySelector('.r-wt-kg');
     const lbsEl = row.querySelector('.r-wt-lbs');
     const val   = parseFloat(from==='kg' ? kgEl.value : lbsEl.value);
-    if (isNaN(val) || val === '') {
-      if (from==='kg') lbsEl.value=''; else kgEl.value='';
+    if (isNaN(val)) {
+      if (from==='kg') lbsEl.value = ''; else kgEl.value = '';
     } else if (from==='kg') {
       lbsEl.value = +(val * 2.20462).toFixed(3);
     } else {
@@ -330,7 +379,7 @@
   }
 
   function calcRow(id) {
-    const row  = document.getElementById('row-'+id);
+    const row  = document.getElementById('row-' + id);
     if (!row) return;
     const unit = document.getElementById('dimUnit').value;
     const qty  = parseFloat(row.querySelector('.r-qty').value) || 0;
@@ -338,34 +387,29 @@
     const W    = parseFloat(row.querySelector('.r-w').value);
     const H    = parseFloat(row.querySelector('.r-h').value);
     const wt   = parseFloat(row.querySelector('.r-wt-kg').value);
-
-    const hasDims = !isNaN(L)&&!isNaN(W)&&!isNaN(H)&&L>0&&W>0&&H>0;
-    const Lcm=toCm(L,unit), Wcm=toCm(W,unit), Hcm=toCm(H,unit);
-
-    const cbmPkg  = hasDims ? (Lcm*Wcm*Hcm)/1000000 : NaN;
-    const cbmTot  = hasDims ? cbmPkg*qty : NaN;
-    const cbfTot  = hasDims ? cbmTot*35.3147 : NaN;
-    const volWt   = hasDims ? (Lcm*Wcm*Hcm*qty)/6000 : NaN;
-    const totalWt = (!isNaN(wt)&&qty>0) ? wt*qty : NaN;
-    const charge  = (!isNaN(volWt)&&!isNaN(totalWt)) ? Math.max(volWt,totalWt) : NaN;
+    const hasDims = !isNaN(L) && !isNaN(W) && !isNaN(H) && L>0 && W>0 && H>0;
+    const Lcm = toCm(L, unit), Wcm = toCm(W, unit), Hcm = toCm(H, unit);
+    const cbmPkg  = hasDims ? (Lcm * Wcm * Hcm) / 1000000 : NaN;
+    const cbmTot  = hasDims ? cbmPkg * qty : NaN;
+    const cbfTot  = hasDims ? cbmTot * 35.3147 : NaN;
+    const volWt   = hasDims ? (Lcm * Wcm * Hcm * qty) / 6000 : NaN;
+    const totalWt = (!isNaN(wt) && qty > 0) ? wt * qty : NaN;
+    const charge  = (!isNaN(volWt) && !isNaN(totalWt)) ? Math.max(volWt, totalWt) : NaN;
     const isVol   = volWt >= totalWt;
-
-    row.querySelector('.r-total-wt').textContent = isNaN(totalWt)?'—':fmt(totalWt,2);
-    row.querySelector('.r-cbm-pkg').textContent  = isNaN(cbmPkg)?'—':fmt(cbmPkg,5);
-    row.querySelector('.r-cbm-tot').textContent  = isNaN(cbmTot)?'—':fmt(cbmTot,4);
-    row.querySelector('.r-cbf-tot').textContent  = isNaN(cbfTot)?'—':fmt(cbfTot,3);
-    row.querySelector('.r-volwt').textContent    = isNaN(volWt)?'—':fmt(volWt,2);
-
+    row.querySelector('.r-total-wt').textContent = isNaN(totalWt) ? '—' : fmt(totalWt, 2);
+    row.querySelector('.r-cbm-pkg').textContent  = isNaN(cbmPkg)  ? '—' : fmt(cbmPkg, 5);
+    row.querySelector('.r-cbm-tot').textContent  = isNaN(cbmTot)  ? '—' : fmt(cbmTot, 4);
+    row.querySelector('.r-cbf-tot').textContent  = isNaN(cbfTot)  ? '—' : fmt(cbfTot, 3);
+    row.querySelector('.r-volwt').textContent    = isNaN(volWt)   ? '—' : fmt(volWt, 2);
     const cc = row.querySelector('.r-charge');
     cc.innerHTML = isNaN(charge) ? '—'
       : `${fmt(charge,2)} <span class="td-badge ${isVol?'badge-vol':'badge-act'}">${isVol?'VOL':'ACT'}</span>`;
-
     recalcTotals();
   }
 
   function recalcAll() {
-    document.querySelectorAll('#pkgBody tr').forEach(tr=>{
-      const id = parseInt(tr.id.replace('row-',''));
+    document.querySelectorAll('#pkgBody tr').forEach(tr => {
+      const id = parseInt(tr.id.replace('row-', ''));
       calcRow(id);
     });
   }
@@ -373,31 +417,27 @@
   function recalcTotals() {
     const rows = document.querySelectorAll('#pkgBody tr');
     let totPkgs=0, totActWt=0, totCBM=0, totVolWt=0, anyData=false;
-
-    rows.forEach(tr=>{
-      const qty  = parseFloat(tr.querySelector('.r-qty')?.value)||0;
+    rows.forEach(tr => {
+      const qty  = parseFloat(tr.querySelector('.r-qty')?.value) || 0;
       const cbmT = parseFloat(tr.querySelector('.r-cbm-tot')?.textContent?.replace(/,/g,''));
       const actT = parseFloat(tr.querySelector('.r-total-wt')?.textContent?.replace(/,/g,''));
       const volT = parseFloat(tr.querySelector('.r-volwt')?.textContent?.replace(/,/g,''));
       totPkgs += qty;
-      if (!isNaN(cbmT))  { totCBM   += cbmT; anyData=true; }
-      if (!isNaN(actT))  { totActWt += actT; }
-      if (!isNaN(volT))  { totVolWt += volT; }
+      if (!isNaN(cbmT)) { totCBM   += cbmT; anyData = true; }
+      if (!isNaN(actT)) { totActWt += actT; }
+      if (!isNaN(volT)) { totVolWt += volT; }
     });
-
     const totCBF    = totCBM * 35.3147;
     const totCharge = Math.max(totActWt, totVolWt);
     const isVol     = totVolWt >= totActWt;
     const totActLbs = totActWt * 2.20462;
-
     document.getElementById('tot-pkgs').textContent      = rows.length ? totPkgs : '—';
-    document.getElementById('tot-actwt').textContent     = anyData ? fmt(totActWt,2) : '—';
-    document.getElementById('tot-actwt-lbs').textContent = anyData ? fmt(totActLbs,2) : '—';
-    document.getElementById('tot-cbm').textContent       = anyData ? fmt(totCBM,4)   : '—';
-    document.getElementById('tot-cbf').textContent       = anyData ? fmt(totCBF,3)   : '—';
-    document.getElementById('tot-volwt').textContent     = anyData ? fmt(totVolWt,2) : '—';
-    document.getElementById('tot-charge').textContent    = anyData ? fmt(totCharge,2): '—';
-
+    document.getElementById('tot-actwt').textContent     = anyData ? fmt(totActWt, 2) : '—';
+    document.getElementById('tot-actwt-lbs').textContent = anyData ? fmt(totActLbs, 2) : '—';
+    document.getElementById('tot-cbm').textContent       = anyData ? fmt(totCBM, 4)   : '—';
+    document.getElementById('tot-cbf').textContent       = anyData ? fmt(totCBF, 3)   : '—';
+    document.getElementById('tot-volwt').textContent     = anyData ? fmt(totVolWt, 2) : '—';
+    document.getElementById('tot-charge').textContent    = anyData ? fmt(totCharge, 2): '—';
     const banner = document.getElementById('charge-banner');
     if (anyData) {
       banner.textContent = `✈ Total Chargeable Weight: ${fmt(totCharge,2)} kg — based on ${isVol?'Volumetric':'Actual'} Weight (${isVol?'VOL > ACT':'ACT > VOL'})`;
@@ -408,7 +448,32 @@
     }
   }
 
-  addRow(); addRow();
+  // INSURANCE
+  function calcInsurance() {
+    const cargo     = parseFloat(document.getElementById('ins-cargo').value)     || 0;
+    const transport = parseFloat(document.getElementById('ins-transport').value) || 0;
+    const duties    = parseFloat(document.getElementById('ins-duties').value)    || 0;
+    const rate      = parseFloat(document.getElementById('ins-rate').value);
+    const hasAny    = cargo || transport || duties;
+    const subtotal  = cargo + transport + duties;
+    const loading   = subtotal * 0.10;
+    const insured   = subtotal * 1.10;
+    const cost      = (!isNaN(rate) && insured > 0) ? insured * (rate / 100) : NaN;
+    const money     = n => (n === 0 && !hasAny) ? '—' : '$' + fmt(n, 2);
+    document.getElementById('ins-d-cargo').textContent     = money(cargo);
+    document.getElementById('ins-d-transport').textContent = money(transport);
+    document.getElementById('ins-d-duties').textContent    = money(duties);
+    document.getElementById('ins-d-subtotal').textContent  = hasAny ? '$' + fmt(subtotal, 2) : '—';
+    document.getElementById('ins-d-loading').textContent   = hasAny ? '$' + fmt(loading, 2)  : '—';
+    document.getElementById('ins-d-insured').textContent   = hasAny ? '$' + fmt(insured, 2)  : '—';
+    document.getElementById('ins-res-insured').textContent = hasAny ? '$' + fmt(insured, 2)  : '—';
+    document.getElementById('ins-res-cost').textContent    = !isNaN(cost) ? '$' + fmt(cost, 2) : '—';
+    document.getElementById('ins-res-rate-lbl').textContent = !isNaN(rate) ? `at ${rate}% rate` : 'enter rate above';
+  }
+
+  // Init
+  addRow();
+  addRow();
 </script>
 </body>
 </html>
